@@ -88,7 +88,8 @@ nav a{
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: right;
-    margin-bottom: 30px;
+    
+    margin-bottom: 20px;
     padding: 15px;
     width: 500px;
     border-radius: 30px;
@@ -155,6 +156,7 @@ footer a{
     }
     .search-input{
         width: 70%;
+        margin-bottom: 10px;
         padding: 10px;
         font-size: 0.7em;
     }
