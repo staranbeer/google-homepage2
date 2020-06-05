@@ -1,6 +1,7 @@
-body{
-    outline: none;    
+/* ####################### default styles ################################ */
 
+body{
+    outline: none;   
     margin: 0;
     padding: 0;
     height:98vh;
@@ -12,18 +13,26 @@ header{
 footer{
     background-color: #F2F2F2;
 }
+
 a{
     text-decoration: none;
 }
+
 a:hover{
     text-decoration: underline;
 }
+
+/* ######################### custom styles ################################# */
+
+
 nav a:visited{
-    color: 545454;
+    color: #545454;
 }
+
 .main-content a:visited{
     color: #2643AB;
 }
+
 .container{
     display: flex;
     width: 99.5vw;
@@ -31,6 +40,7 @@ nav a:visited{
     align-items: center;
     margin-top: 10px;
 }
+
 nav a{
     font-size: .85em;
     color: #545454;
@@ -41,11 +51,16 @@ nav a{
     height: 1.5em;
     opacity: 0.5;
 }
-
+.menu:hover{
+    cursor: pointer;
+}
 .account{
     border-radius: 50%;
     width: 2em;
     margin-right: 10px;
+}
+.account:hover{
+    box-shadow: 2px 2px 6px lightgray;
 }
 
 .flex-child{
@@ -64,9 +79,17 @@ nav a{
 .google-logo{
     padding-bottom: 30px;
 }
+.google-logo{
+    cursor: pointer;
+}
 .search-input{
+    background-image: url(./images/mic.png);
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: right;
     margin-bottom: 30px;
-    padding: 10px;
+    padding: 15px;
     width: 500px;
     border-radius: 30px;
     border: 1px solid lightgray;
@@ -114,4 +137,40 @@ footer a{
     padding: 8px;
     font-size: .9em;
     color: #7B8C98;
+}
+
+@media screen and (max-width: 680px){
+    
+    nav a{
+        font-size: 0.7em;
+    }
+
+    .main-content{
+        height: 70vh;
+    }
+    .google-logo{
+        max-width: 40%;
+        padding-bottom: 25px;
+
+    }
+    .search-input{
+        width: 70%;
+        padding: 10px;
+        font-size: 0.7em;
+    }
+    button{
+        font-size: 0.6em;
+    }
+    
+    .links{
+        font-size: 0.7em;
+    }
+    .footer-left{
+        display: none;
+    }
+    .footer-right{
+        font-size: 0.7em;
+
+    }
+
 }
